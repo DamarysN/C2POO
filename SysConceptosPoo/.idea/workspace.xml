@@ -5,6 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41cf29cc-911f-4c55-8aac-13a3ec6001b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/interfaceencap/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/interfaceencap/Loro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/interfaceencap/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SysConceptosPoo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/encapsulamiento/PersonaX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/encapsulamiento/PersonaX.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../VPM/Modelo.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../VPM/Modelo.vpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -52,19 +60,20 @@
   "keyToString": {
     "Application.App.executor": "Run",
     "Application.MainHerencia.executor": "Run",
+    "Application.Principal.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dev-s3",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ASUS/OneDrive/Documentos/POO/Desarrollo/C2POO/SysConceptosPoo",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Principal">
     <configuration name="MainHerencia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pe.edu.upeu.herencia.MainHerencia" />
       <module name="SysConceptosPoo" />
@@ -78,8 +87,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pe.edu.upeu.interfaceencap.Principal" />
+      <module name="SysConceptosPoo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pe.edu.upeu.interfaceencap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Principal" />
         <item itemvalue="Application.MainHerencia" />
       </list>
     </recent_temporary>
