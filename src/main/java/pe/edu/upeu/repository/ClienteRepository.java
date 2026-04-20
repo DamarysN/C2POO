@@ -1,0 +1,48 @@
+package pe.edu.upeu.repository;
+import pe.edu.upeu.model.Cliente;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ClienteRepository {
+
+    private static ClienteRepository intance=new ClienteRepository();
+
+    public static ClienteRepository getInstance(){
+        if (intance==null){
+            intance=new ClienteRepository();
+        }
+        return intance;
+    }
+
+    List<Cliente> clientes=new ArrayList<>();
+    //C=Create
+    public void agregarCliente(Cliente c){
+        clientes.add(c);
+    }
+    //R=Report
+    public List<Cliente> listarClientes(){
+        return clientes;
+    }
+    //U=Update
+    public void actualizarCliente(Cliente c, int index){
+        clientes.set(index, c);
+    }
+    //D=Delete
+    public void eliminarCliente(int index){
+        clientes.remove(index);
+    }
+    public void eliminarTodo(){
+        clientes.clear();
+    }
+
+    public void datosPredeterminados(){
+        clientes.add(new Cliente("01","Juan Mateo Apaza Quispe",
+                "951782520","mateo@gmail.com"));
+        clientes.add(new Cliente("02","Pedrito Apaza Apaza"));
+    }
+
+    public int getClientes(){
+        return clientes.size();
+    }
+}
