@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.controller.MainAlumnoControl">
+<children>
+    <VBox AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <children>
+
+            <!-- HEADER -->
+            <AnchorPane>
+                <children>
+                    <Pane AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                        <children>
+                            <Label layoutY="25.0" text="PADRÓN DE ESTUDIANTES">
+                                <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                </font>
+                            </Label>
+
+                            <Label layoutX="244.0" layoutY="29.0" text="Buscar Alumno" />
+                            <TextField fx:id="txtBuscar" layoutX="244.0" layoutY="49.0" />
+                        </children>
+                    </Pane>
+                </children>
+            </AnchorPane>
+
+            <!-- FORM -->
+            <AnchorPane>
+                <children>
+                    <HBox AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+
+                        <children>
+                            <GridPane>
+
+                                <children>
+                                    <Label alignment="CENTER" lineSpacing="1.0" prefHeight="34.0" prefWidth="240.0" text="DATOS DEL ALUMNO" GridPane.columnSpan="4">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+
+                                    <Label text="Nombre:" GridPane.rowIndex="1" />
+                                    <TextField fx:id="txtNombre" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets></TextField>
+
+                                    <Label text="CURP:" GridPane.rowIndex="2" />
+                                    <TextField fx:id="txtCurp" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2" />
+
+                                    <Label text="Nivel:" GridPane.rowIndex="3" />
+                                    <TextField fx:id="txtNivel" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+
+                                    <Label text="Escuela:" GridPane.rowIndex="4" />
+                                    <TextField fx:id="txtEscuela" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="4" />
+
+                                    <Label text="Tutor:" GridPane.rowIndex="5" />
+                                    <TextField fx:id="txtTutor" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="5" />
+
+                                    <Label text="Teléfono:" GridPane.rowIndex="6" />
+                                    <TextField fx:id="txtTelefono" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="6" />
+
+                                    <Button fx:id="btnGuardar" text="Guardar" GridPane.rowIndex="7" />
+                                    <Button fx:id="btnActualizar" text="Actualizar" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Button fx:id="btnLimpiar" text="Limpiar" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <Button fx:id="btnEliminar" onAction="#eliminar" text="Eliminar" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                                </children>
+                           <columnConstraints>
+                              <ColumnConstraints />
+                              <ColumnConstraints />
+                              <ColumnConstraints />
+                              <ColumnConstraints />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                            </GridPane>
+
+                            <TableView fx:id="tableRegAlumno">
+                                <HBox.margin>
+                                    <Insets left="5.0" />
+                                </HBox.margin>
+                            </TableView>
+
+                        </children>
+                    </HBox>
+                </children>
+            </AnchorPane>
+
+        </children>
+    </VBox>
+</children>
+</AnchorPane>

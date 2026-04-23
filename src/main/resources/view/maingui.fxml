@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bp" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pe.edu.upeu.controller.MainguiControl">
+
+    <top>
+        <MenuBar fx:id="menuBar">
+            <menus>
+
+                <Menu text="Sistema">
+                    <items>
+                        <MenuItem fx:id="menuItem1" text="Registro de Alumnos"/>
+                        <MenuItem fx:id="menuItem2" text="Padrón de Estudiantes"/>
+                        <MenuItem fx:id="menuItem3" text="Salir"/>
+                    </items>
+                </Menu>
+
+                <Menu text="Ayuda">
+                    <items>
+                        <MenuItem text="Acerca de"/>
+                    </items>
+                </Menu>
+
+            </menus>
+        </MenuBar>
+    </top>
+
+    <center>
+        <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Inicio"/>
+            </tabs>
+        </TabPane>
+    </center>
+
+</BorderPane>
